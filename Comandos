@@ -1,0 +1,39 @@
+//na pasta principal do projeto
+npm init -y
+
+//será criado o package.json
+//abra o vscode
+//no terminal do vscode execute o comando
+npm add express
+
+//para rodar a API
+node index.js
+
+//criar index.js com o codigo abaixo
+
+const express = require('express');
+
+const app = express();
+app.get('/',(request,response)=>{
+    return response.json({
+        teste:'Hello World'
+    });
+
+});
+
+app.listen(3333);
+
+//para instalar o nodemon
+npm install nodemon -D
+
+//alterar script em package.json
+"start": "nodemon index.js"
+
+
+
+
+
+//para react
+npx create-react-app "nome do projeto"
+
+npm start
