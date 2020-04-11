@@ -29,7 +29,8 @@ npm install nodemon -D
 //alterar script em package.json
 "start": "nodemon index.js"
 
-
+//instalar validador
+npm install express-validator
 
 
 
